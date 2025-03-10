@@ -1,0 +1,198 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v47-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v47-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+:root {
+  --color-brand-light: #2b7fff;
+  --color-brand-dark: #011c44;
+  --color-primary-light: #747272;
+  --color-primary-dark: #4a4a4a;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/*Base*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--color-brand-light);
+}
+
+.brand-name {
+  text-transform: capitalize;
+}
+
+.brand-text-dark {
+  color: var(--color-brand-dark);
+}
+
+.brand-text-light {
+  color: var(--color-brand-light);
+}
+
+/*Button*/
+.button {
+  padding: 16px 32px;
+  color: var(--white);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+/*Links*/
+.link {
+  text-decoration: none;
+}
+
+.link-header {
+  color: var(--color-brand-light);
+}
+
+.link-header:hover {
+  color: var(--color-brand-dark);
+}
+
+.link-footer {
+  color: var(--white);
+}
+
+.link-footer:hover {
+  color: var(--color-brand-light);
+}
+
+/*Hero-section*/
+.hero-text {
+  color: var(--color-brand-dark);
+}
+
+.hero-title {
+  font-family: "Play", sans-serif;
+  font-size: 140px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-brand-light);
+}
+
+.hero-subtext {
+  color: var(--color-primary-dark);
+  font-size: 12px;
+}
+
+/*Reincarnation-section*/
+.reincarnation-text {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.reincarnation-brand-text {
+  font-weight: 600;
+}
+
+/*Advantages-section*/
+.advantages-items {
+  color: var(--black);
+}
+
+/*Procedures-section*/
+.procedures-items {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+/*Contact-section*/
+.form-title {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.form-subtext {
+  font-size: 12px;
+  color: var(--color-primary-light);
+}
+
+.form-link {
+  color: var(--color-primary-light);
+}
+
+/*Footer*/
+.copyright-text {
+  color: var(--color-primary-light);
+}
