@@ -77,7 +77,7 @@ ul {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 100px;
 }
 
 .section-title {
@@ -138,6 +138,7 @@ ul {
 
 /*Header*/
 .header-container {
+  padding: 32px 0;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -169,24 +170,49 @@ ul {
 }
 
 /*Hero-section*/
+.hero-block {
+  width: 100%;
+  max-width: 530px;
+  padding: 122px 0 126px 105px;
+}
+
 .hero-text {
+  margin-bottom: 16px;
   color: var(--color-brand-dark);
 }
 
 .hero-title {
+  margin-bottom: 40px;
   font-family: "Play", sans-serif;
   font-size: 140px;
-  line-height: 1.2;
+  line-height: 0.815;
   font-weight: 700;
   color: var(--color-brand-light);
 }
 
 .hero-subtext {
+  margin-top: 14px;
   color: var(--color-primary-dark);
   font-size: 12px;
 }
 
 /*Reincarnation-section*/
+.reincarnation-section {
+  padding-bottom: 88px;
+}
+
+.reincarnation-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.reincarnation-block {
+  padding-top: 40px;
+  width: 100%;
+  max-width: 710px;
+}
+
 .reincarnation-text {
   font-size: 22px;
   line-height: 1.7;
@@ -196,12 +222,28 @@ ul {
   font-weight: 600;
 }
 
+.reincarnation-images {
+  width: 100%;
+  max-width: 400px;
+  height: 695px;
+  border: 1px solid red;
+  justify-content: flex-end;
+}
+
 /*Advantages-section*/
+.advantages-section {
+  padding: 88px 0 48px;
+}
+
 .advantages-items {
   color: var(--black);
 }
 
 /*Procedures-section*/
+.procedures-section {
+  padding: 48px 0;
+}
+
 .procedures-items {
   font-size: 22px;
   line-height: 1.2;
@@ -209,6 +251,9 @@ ul {
 }
 
 /*Contact-section*/
+.contact-section {
+  padding-bottom: 96px;
+}
 .form-title {
   font-size: 22px;
   line-height: 1.2;
