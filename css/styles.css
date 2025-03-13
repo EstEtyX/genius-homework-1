@@ -39,7 +39,7 @@
 
 /*Base*/
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -47,6 +47,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+  margin: 0;
 }
 
 footer {
@@ -75,8 +76,8 @@ ul {
 
 .container {
   width: 100%;
-  max-width: 1288px;
-  margin: 0 auto;
+  max-width: 1240px;
+  margin: 0;
   padding: 0 100px;
 }
 
@@ -86,6 +87,7 @@ ul {
   font-size: 64px;
   line-height: 1.2;
   color: var(--color-brand-light);
+  margin-bottom: 48px;
 }
 
 .brand-name {
@@ -161,12 +163,7 @@ ul {
 .soccontakt {
   display: flex;
   gap: 32px;
-}
-
-.soccontakt-item {
-  height: 32px;
-  width: 32px;
-  border: 1px solid var(--color-brand-dark);
+  align-items: center;
 }
 
 /*Hero-section*/
@@ -203,14 +200,24 @@ ul {
 
 .reincarnation-container {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  /* justify-content: space-between; */
+  gap: 32px;
 }
 
 .reincarnation-block {
-  padding-top: 40px;
+  padding: 40px 0 200px;
   width: 100%;
   max-width: 710px;
+}
+
+.reincarnation-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--color-brand-light);
+  margin-bottom: 40px;
+  padding-right: 180px;
 }
 
 .reincarnation-text {
@@ -223,20 +230,40 @@ ul {
 }
 
 .reincarnation-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
-  max-width: 400px;
-  height: 695px;
-  border: 1px solid red;
-  justify-content: flex-end;
+  max-width: 500px;
+}
+
+.reincarnation-image-good {
+  align-self: flex-end;
 }
 
 /*Advantages-section*/
 .advantages-section {
   padding: 88px 0 48px;
+  background-color: #747272;
 }
 
 .advantages-items {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1060px;
+  display: flex;
+  gap: 56px;
   color: var(--black);
+}
+
+.advantages-item {
+  display: flex;
+  margin-bottom: 0;
+  padding: 24px 32px;
+  border-radius: 32px;
+  background-color: var(--white);
 }
 
 /*Procedures-section*/
