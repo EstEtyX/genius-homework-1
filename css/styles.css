@@ -234,8 +234,8 @@ ul {
 }
 
 .reincarnation-block {
-  padding: 40px 0 200px;
-  width: 100%;
+  padding-top: 40px;
+  /* width: 100%; */
   max-width: 710px;
 }
 
@@ -246,7 +246,7 @@ ul {
   line-height: 1.2;
   color: var(--color-brand-light);
   margin-bottom: 40px;
-  padding-right: 180px;
+  max-width: 528px;
 }
 
 .reincarnation-text {
@@ -261,10 +261,11 @@ ul {
 .reincarnation-images {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
+  gap: 40px;
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   border: 0;
   border-radius: 50%;
 }
@@ -391,6 +392,7 @@ ul {
 
 .contact-block {
   display: flex;
+  justify-content: center;
   gap: 32px;
 }
 
