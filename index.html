@@ -18,47 +18,47 @@
             </a>
             <ul class="header-menu">
               <li>
-                <a class="link-header link" href="#reincarnation-section"
+                <a class="header-link link" href="#reincarnation-section"
                   >Про нас</a
                 >
               </li>
               <li>
-                <a class="link-header link" href="#advantages-section"
+                <a class="header-link link" href="#advantages-section"
                   >Чому ми</a
                 >
               </li>
               <li>
-                <a class="link-header link" href="#procedures-section"
+                <a class="header-link link" href="#procedures-section"
                   >Наші процедури</a
                 >
               </li>
               <li>
-                <a class="link-header link" href="#contact-section">Контакти</a>
+                <a class="header-link link" href="#contact-section">Контакти</a>
               </li>
             </ul>
           </nav>
           <address>
-            <ul class="soccontakt">
+            <ul class="soccontakt-blok">
               <li>
-                <a class="link-header" href="#"
-                  ><img
-                    src="./images/icon-telephone.svg"
-                    alt="іконка-посилання зателефонувати"
-                /></a>
+                <a href="#" target="_blank">
+                  <svg class="header-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="link-header" href="#"
-                  ><img
-                    src="./images/icon-facebook.svg"
-                    alt="іконка-посилання facebook"
-                /></a>
+                <a href="#" target="_blank">
+                  <svg class="header-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a class="link-header" href="#"
-                  ><img
-                    src="./images/icon-instagram.svg"
-                    alt="іконка-посилання instagram"
-                /></a>
+                <a href="#" target="_blank">
+                  <svg class="header-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </address>
@@ -103,12 +103,12 @@
             </div>
             <div class="reincarnation-images">
               <img
-                class="reincarnation-image-bad"
+                class="reincarnation-foto"
                 src="./images/face-bad.jpg"
                 alt="обличчя з обвісшою шкірою"
               />
               <img
-                class="reincarnation-image-good"
+                class="reincarnation-foto end"
                 src="./images/face-good.jpg"
                 alt="обличчя з підтянутою шкірою"
               />
@@ -121,35 +121,29 @@
           <h2 class="section-title">
             <span class="brand-text-dark">Чому люди <br /></span> обирають нас
           </h2>
-          <ul class="advantages-items">
+          <ul class="advantages-list">
             <li class="advantages-item">
-              <img
-                class="advantages-icon"
-                src="./images/icon-materials-science.svg"
-                alt="якість"
-              />
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-materials-science"></use>
+              </svg>
               <p class="advantages-text">
-                Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                від 5 років
+                Всі наші косметологи мають вищу медичну освіту <br />
+                та стаж роботи від 5 років
               </p>
             </li>
             <li class="advantages-item">
-              <img
-                class="advantages-icon"
-                src="./images/icon-equipments.svg"
-                alt="професійне-обладнання"
-              />
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-equipments"></use>
+              </svg>
               <p class="advantages-text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
             <li class="advantages-item">
-              <img
-                class="advantages-icon"
-                src="./images/icon-goal.svg"
-                alt="мета"
-              />
+              <svg class="advantages-icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-goal"></use>
+              </svg>
               <p class="advantages-text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
@@ -163,23 +157,25 @@
           <h2 class="section-title">
             <span class="brand-text-dark">Наші</span> процедури
           </h2>
-          <ul class="procedures-items">
-            <li>
-              <article>
-                <p>Маски для обличчя</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <p>Ін'єкції для обличчя</p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <p>Очищення обличчя</p>
-              </article>
-            </li>
-          </ul>
+          <div class="procedures-container">
+            <ul class="procedures-list">
+              <li>
+                <article>
+                  <p>Маски для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <p>Ін'єкції для обличчя</p>
+                </article>
+              </li>
+              <li>
+                <article>
+                  <p>Очищення обличчя</p>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="contact-section" id="contact-section">
@@ -214,29 +210,33 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <a href="index.html"><img src="./images/logo.svg" alt="логотип" /></a>
+          <div class="footer-logo">
+            <a href="index.html"
+              ><img src="./images/logo.svg" alt="логотип"
+            /></a>
+          </div>
           <nav>
             <ul class="footer-menu">
               <li>
-                <a class="link-footer link" href="#reincarnation-section"
+                <a class="footer-link link" href="#reincarnation-section"
                   >Про нас
                 </a>
               </li>
               <li>
-                <a class="link-footer link" href="#advantages-section"
+                <a class="footer-link link" href="#advantages-section"
                   >Чому ми
                 </a>
               </li>
               <li>
-                <a class="link-footer link" href="#procedures-section"
+                <a class="footer-link link" href="#procedures-section"
                   >Наші процедури
                 </a>
               </li>
               <li>
-                <a class="link-footer link" href="#contact-section">Контакти</a>
+                <a class="footer-link link" href="#contact-section">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -244,7 +244,7 @@
             <ul class="footer-address">
               <li>
                 <a
-                  class="link-footer link"
+                  class="footer-link link"
                   href="tel:+380960000007"
                   target="_blank"
                   >+ 38 (096) 000 00 07</a
@@ -252,7 +252,7 @@
               </li>
               <li>
                 <a
-                  class="link-footer link"
+                  class="footer-link link"
                   href="mailto:beautyzone@gmail.com"
                   target="_blank"
                   >beautyzone@gmail.com
@@ -260,40 +260,40 @@
               </li>
               <li>
                 <a
-                  class="link-footer link"
+                  class="footer-link link"
                   href="https://maps.app.goo.gl/sQAjTUkTdFyJKXKs5"
                   target="_blank"
                   >Україна, м. Київ, <br />
                   вул. Тараса Шевченка 5</a
                 >
               </li>
-              <ul class="soccontakt">
+              <ul class="soccontakt-blok">
                 <li>
-                  <a href="#"
-                    ><img
-                      src="./images/icon-telephone.svg"
-                      alt="іконка-посилання зателефонувати"
-                  /></a>
+                  <a href="#" target="_blank">
+                    <svg class="footer-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><img
-                      src="./images/icon-facebook.svg"
-                      alt="іконка-посилання facebook"
-                  /></a>
+                  <a href="#" target="_blank">
+                    <svg class="footer-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><img
-                      src="./images/icon-instagram.svg"
-                      alt="іконка-посилання instagram"
-                  /></a>
+                  <a href="#" target="_blank">
+                    <svg class="footer-icon" width="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </ul>
           </address>
           <div class="footer-documents">
-            <a class="link-footer link" href="#" target="_blank"
+            <a class="footer-link link" href="#" target="_blank"
               >Політика конфіденційності</a
             >
             <p class="copyright-text">&copy; 2022 Дані захищені</p>

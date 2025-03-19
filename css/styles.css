@@ -38,7 +38,9 @@
 }
 
 /*Base*/
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -64,6 +66,10 @@ p {
   margin-top: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 address {
   font-style: normal;
 }
@@ -86,8 +92,9 @@ ul {
   font-weight: 700;
   font-size: 64px;
   line-height: 1.2;
-  color: var(--color-brand-light);
   margin-bottom: 48px;
+  color: var(--color-brand-light);
+  text-align: center;
 }
 
 .brand-name {
@@ -126,26 +133,23 @@ ul {
   text-decoration: none;
 }
 
-.link-header {
+.header-link {
   color: var(--color-brand-dark);
 }
 
-.link-header:hover {
-  color: var(--color-brand-light);
-}
-
-.link-footer {
+.footer-link {
   color: var(--white);
 }
 
-.link-footer:hover {
+.header-link:hover,
+.footer-link:hover {
   color: var(--color-brand-light);
 }
 
-/*Footer*/
-
-footer {
-  background-color: green;
+.soccontakt-blok {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 /*Header*/
@@ -170,13 +174,28 @@ footer {
   gap: 56px;
 }
 
-.soccontakt {
-  display: flex;
-  gap: 32px;
-  align-items: center;
+.header-icon {
+  fill: var(--color-brand-dark);
+}
+
+.header-icon:hover {
+  fill: var(--color-brand-light);
 }
 
 /*Hero-section*/
+.hero-section {
+  background-image: linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/hero-section-image.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 .hero-block {
   width: 100%;
   max-width: 530px;
@@ -246,24 +265,33 @@ footer {
   align-items: flex-start;
   width: 100%;
   max-width: 500px;
+  border: 0;
+  border-radius: 50%;
 }
 
-.reincarnation-image-good {
+.reincarnation-foto {
+  border-radius: 50%;
+}
+
+.reincarnation-foto.end {
   align-self: flex-end;
 }
 
 /*Advantages-section*/
 .advantages-section {
   padding: 88px 0 48px;
-  background-color: #747272;
+  background: linear-gradient(
+    38.2deg,
+    rgba(43, 127, 255, 0.2) 39.74%,
+    rgba(43, 127, 255, 0) 54.16%,
+    rgba(43, 127, 255, 0) 66.66%
+  );
 }
 
-.advantages-items {
-  margin: 0 auto;
+.advantages-list {
   padding: 0 40px;
-  width: 100%;
-  max-width: 1060px;
   display: flex;
+  justify-content: center;
   gap: 56px;
   color: var(--black);
 }
@@ -271,8 +299,8 @@ footer {
 .advantages-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  flex-basis: calc((1060px - 112px) / 3);
   gap: 8px;
   margin-bottom: 0;
   padding: 24px 32px;
@@ -281,14 +309,12 @@ footer {
 }
 
 .advantages-icon {
-  width: 100%;
-  max-width: 48px;
-  height: 100%;
-  max-height: 48px;
+  fill: var(--color-brand-light);
 }
 
 .advantages-text {
   margin-bottom: 0;
+  text-align: center;
 }
 
 /*Procedures-section*/
@@ -296,7 +322,7 @@ footer {
   padding: 48px 0;
 }
 
-.procedures-items {
+.procedures-list {
   font-size: 22px;
   line-height: 1.2;
   color: var(--white);
@@ -317,6 +343,7 @@ footer {
   max-width: 600px;
   /* height: 100%; */
   max-height: 480px;
+  border: 0;
   border-radius: 32px;
 }
 
@@ -346,6 +373,9 @@ footer {
 }
 
 /*Footer*/
+.footer {
+  background-color: var(--color-brand-dark);
+}
 
 .footer-container {
   padding: 56px 0;
@@ -364,6 +394,14 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-icon {
+  fill: var(--white);
+}
+
+.footer-icon:hover {
+  fill: var(--color-brand-light);
 }
 
 .footer-documents {
