@@ -326,6 +326,33 @@ ul {
   font-size: 22px;
   line-height: 1.2;
   color: var(--white);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.procedures-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: calc((1064px - 32px) / 3);
+  height: 456px;
+  border: 1px solid black; /*remov*/
+  border-radius: 4px 120px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+}
+
+.procedures-card {
+  text-align: center;
+}
+
+.procedures-text {
+  margin-bottom: 32px;
 }
 
 /*Contact-section*/
