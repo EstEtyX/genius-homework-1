@@ -83,7 +83,7 @@ ul {
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 100px;
 }
 
@@ -233,7 +233,13 @@ ul {
   color: var(--color-brand-light);
 }
 
+.hero-button-block {
+  width: 100%;
+  max-width: 238px;
+}
+
 .hero-subtext {
+  text-align: center;
   margin-top: 14px;
   margin-bottom: 0;
   color: var(--color-primary-dark);
@@ -390,6 +396,10 @@ ul {
   fill: var(--white);
   background-color: var(--color-brand-light);
   border: var(--white);
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .procedures-list {
