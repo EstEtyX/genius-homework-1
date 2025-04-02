@@ -82,6 +82,15 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -534,10 +543,6 @@ ul {
 
 .modal {
   position: relative;
-  width: 100%;
-  max-width: 724px;
-  height: 100%;
-  max-height: 682px;
   background-color: var(--color-brand-dark);
   border-radius: 48px;
   overflow-y: auto;
@@ -555,9 +560,14 @@ ul {
 
 .modal-block {
   padding: 42px 144px;
+  width: 100%;
+  max-width: 724px;
+  height: 100%;
+  max-height: 682px;
 }
 
 .modal-title {
+  margin-bottom: 40px;
   font-size: 64px;
   font-weight: 700;
 }
@@ -571,6 +581,36 @@ ul {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 32px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 18px 32px;
+  width: 100%;
+  border: 2px solid var(--color-primary-light);
+  border-radius: 32px;
+  background-color: transparent;
+  font-size: 13px;
+  color: var(--white);
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--white);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-light);
 }
 
 .form-button {
