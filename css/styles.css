@@ -295,24 +295,29 @@ ul {
 
 .star-big {
   position: absolute;
+  top: 346px;
+  right: 296px;
   width: 64px;
   height: 64px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* top: 350px;
-  left: 126px; */
-  margin-top: 350px;
-  margin-left: 126px;
   fill: var(--color-brand-dark);
 }
 
 .star-normal {
   position: absolute;
+  top: 40px;
+  right: -18px;
   width: 40px;
   height: 40px;
   fill: var(--color-brand-light);
+}
+
+.star-smoll {
+  position: absolute;
+  top: 280px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  fill: var(--color-primary-light);
 }
 
 /*Advantages-section*/
