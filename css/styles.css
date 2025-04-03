@@ -271,7 +271,6 @@ ul {
   line-height: 1.2;
   color: var(--color-brand-light);
   margin-bottom: 40px;
-  /* max-width: 528px; */
 }
 
 .reincarnation-text {
@@ -287,9 +286,10 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   align-items: flex-start;
   gap: 40px;
+  width: 100%;
+  max-width: 500px;
   border: 0;
 }
 
@@ -453,26 +453,30 @@ ul {
 .contact-map {
   width: 100%;
   max-width: 600px;
-  /* height: 100%; */
-  max-height: 480px;
   border: 0;
   border-radius: 32px;
 }
 
 .contact-form {
   width: 100%;
-  max-width: 422px;
-  padding: 48px 57px;
+  max-width: 424px;
+  padding: 48px 56px;
   background-color: var(--color-brand-dark);
   border-radius: 32px;
+  text-align: center;
 }
 
-/* .form-title {
+.contact-form-title {
   margin-bottom: 32px;
+  padding: 0 18px;
   font-size: 22px;
   line-height: 1.2;
   color: var(--white);
-} */
+}
+
+.form-field.contact {
+  margin-bottom: 16px;
+}
 
 /*Footer*/
 .footer {
@@ -547,6 +551,10 @@ ul {
   border-radius: 48px;
   overflow-y: auto;
   text-align: center;
+  width: 100%;
+  max-width: 724px;
+  height: 100%;
+  max-height: 682px;
 }
 
 .modal-btn-close {
@@ -560,10 +568,6 @@ ul {
 
 .modal-block {
   padding: 42px 144px;
-  width: 100%;
-  max-width: 724px;
-  height: 100%;
-  max-height: 682px;
 }
 
 .modal-title {

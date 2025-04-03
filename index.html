@@ -87,7 +87,10 @@
           <div class="reincarnation-container">
             <div class="reincarnation-block">
               <h2 class="reincarnation-title">
-                <span class="brand-text-dark">Перевтілюйтесь в <br /></span>
+                <span class="brand-text-dark"
+                  >Перевтілюйтесь<br />
+                  в
+                </span>
                 <span class="brand-name">beauty zone!</span>
               </h2>
               <p class="reincarnation-text brand-text-dark">
@@ -223,21 +226,58 @@
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <!-- <div class="contact-form">
-              <h3 class="form-title">
+            <div class="contact-form">
+              <h3 class="contact-form-title">
                 Запишіться <span class="brand-text-light">безкоштовно</span>
-                <br />
                 та отримайте подарунок
               </h3>
-              <button class="form-button button" type="button">
-                Записатись безкоштовно
-              </button>
+              <form name="modal-form" autocomplete="on" novalidate>
+                <div class="form-field contact">
+                  <label class="form-label visually-hidden" for="user-name">
+                    Ваше ім'я та прізвище
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                  />
+                </div>
+                <div class="form-field contact">
+                  <label class="form-label visually-hidden" for="user-tel">
+                    Ваш номер телефону
+                  </label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Ваш номер телефону"
+                  />
+                </div>
+                <div class="form-field contact">
+                  <label class="form-label visually-hidden" for="user-email">
+                    Ваша електронна пошта
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Ваша електронна пошта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Записатись безкоштовно
+                </button>
+              </form>
               <p class="form-subtext">
                 Натискаючи на кнопку я погоджуюсь <br />
                 з
                 <a class="form-link" href="#">політикою конфіденційності</a>
               </p>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
@@ -335,7 +375,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
         <div class="modal-block">
@@ -345,7 +385,7 @@
               Запишіться <span class="brand-text-light">безкоштовно</span>
               та отримайте подарунок
             </h3>
-            <form name="modal-form" autocomplete="on">
+            <form name="modal-form" autocomplete="on" novalidate>
               <div class="form-field">
                 <label class="form-label visually-hidden" for="user-name">
                   Ваше ім'я та прізвище
@@ -385,12 +425,12 @@
               <button class="form-button button" type="submit">
                 Записатись безкоштовно
               </button>
-              <p class="form-subtext">
-                Натискаючи на кнопку я погоджуюсь <br />
-                з
-                <a class="form-link" href="#">політикою конфіденційності</a>
-              </p>
             </form>
+            <p class="form-subtext">
+              Натискаючи на кнопку я погоджуюсь <br />
+              з
+              <a class="form-link" href="#">політикою конфіденційності</a>
+            </p>
           </div>
         </div>
       </div>
