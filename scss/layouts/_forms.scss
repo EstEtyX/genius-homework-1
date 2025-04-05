@@ -1,59 +1,81 @@
-.modal-form {
-  padding: 0 62px;
-}
+.form {
+  &--modal {
+    padding: 0 62px;
+  }
 
-.form-title {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 32px;
-}
+  &--contact {
+    width: 100%;
+    max-width: 424px;
+    padding: 48px 56px;
+    background-color: var(--color-brand-dark);
+    border-radius: 32px;
+    text-align: center;
+  }
 
-.form-field {
-  margin-bottom: 24px;
-}
+  &__title {
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 32px;
+    &--contact {
+      margin-bottom: 32px;
+      padding: 0 18px;
+      color: var(--white);
+    }
+  }
 
-.form-label {
-  display: block;
-}
+  &__field {
+    &--modal {
+      margin-bottom: 24px;
+    }
+    &--contact {
+      margin-bottom: 16px;
+    }
+  }
 
-.form-input {
-  padding: 18px 32px;
-  width: 100%;
-  border: 2px solid var(--color-primary-light);
-  border-radius: 32px;
-  background-color: transparent;
-  font-size: 13px;
-  color: var(--white);
-}
+  &__label {
+    display: block;
+  }
 
-.form-input:focus {
-  outline: none;
-}
+  &__input {
+    padding: 18px 32px;
+    width: 100%;
+    border: 2px solid var(--color-primary-light);
+    border-radius: 32px;
+    background-color: transparent;
+    font-size: 13px;
+    color: var(--white);
 
-.form-input::placeholder {
-  color: var(--white);
-}
+    &:focus {
+      outline: none;
+    }
 
-.form-input:focus::placeholder {
-  color: var(--color-primary-light);
-}
+    &::placeholder {
+      color: var(--white);
+    }
 
-.form-button {
-  width: 100%;
-  max-width: 282px;
-  margin-bottom: 8px;
-}
+    &:focus::placeholder {
+      color: var(--color-primary-light);
+    }
+  }
 
-.form-button:hover {
-  background-color: var(--white);
-}
+  &__button {
+    width: 100%;
+    max-width: 282px;
+    margin-bottom: 8px;
 
-.form-subtext {
-  margin-bottom: 0;
-  font-size: 12px;
-  color: var(--color-primary-light);
-}
+    &:hover {
+      background-color: var(--white);
+    }
+  }
 
-.form-link {
-  color: var(--color-primary-light);
+  &__subtext {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: var(--color-primary-light);
+  }
+
+  &__link {
+    color: var(--color-primary-light);
+  }
 }

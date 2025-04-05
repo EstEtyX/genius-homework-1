@@ -1,0 +1,23 @@
+.procedures-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: calc((100% - 32px) / 3);
+  height: 456px;
+  border: 1px solid black; /*remov*/
+  border-radius: 4px 120px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--color-brand-dark) 101.39%
+  );
+
+  &__card {
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+}

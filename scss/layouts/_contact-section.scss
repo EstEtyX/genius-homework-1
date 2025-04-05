@@ -1,37 +1,16 @@
 .contact-section {
   padding-bottom: 96px;
-}
 
-.contact-block {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-}
+  &__block {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
 
-.contact-map {
-  width: 100%;
-  max-width: 600px;
-  border: 0;
-  border-radius: 32px;
-}
-
-.contact-form {
-  width: 100%;
-  max-width: 424px;
-  padding: 48px 56px;
-  background-color: var(--color-brand-dark);
-  border-radius: 32px;
-  text-align: center;
-}
-
-.contact-form-title {
-  margin-bottom: 32px;
-  padding: 0 18px;
-  font-size: 22px;
-  line-height: 1.2;
-  color: var(--white);
-}
-
-.form-field.contact {
-  margin-bottom: 16px;
+  &__map {
+    width: 100%;
+    max-width: 600px;
+    border: 0;
+    border-radius: 32px;
+  }
 }
