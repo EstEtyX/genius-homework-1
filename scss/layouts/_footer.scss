@@ -3,41 +3,33 @@
   background-image: url(../images/bottles-foto.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 0;
-}
 
-.footer-container {
-  padding: 56px 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
+  &__container {
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
 
-.footer-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-address {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-icon {
-  fill: var(--white);
-}
+  &__documents {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-icon:hover {
-  fill: var(--color-brand-light);
-}
-
-.footer-documents {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.copyright-text {
-  color: var(--color-primary-light);
+  &__text {
+    color: var(--color-primary-light);
+  }
 }

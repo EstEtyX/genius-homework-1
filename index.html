@@ -42,21 +42,33 @@
           <ul class="contakt-blok">
             <li>
               <a href="#" target="_blank">
-                <svg class="contakt-blok__icon" width="32" height="32">
+                <svg
+                  class="contakt-blok__icon contakt-blok__icon--header"
+                  width="32"
+                  height="32"
+                >
                   <use href="./images/icons.svg#icon-telephone"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                <svg class="contakt-blok__icon" width="32" height="32">
+                <svg
+                  class="contakt-blok__icon contakt-blok__icon--header"
+                  width="32"
+                  height="32"
+                >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                <svg class="contakt-blok__icon" width="32" height="32">
+                <svg
+                  class="contakt-blok__icon contakt-blok__icon--header"
+                  width="32"
+                  height="32"
+                >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -166,7 +178,7 @@
           </ul>
         </div>
       </section>
-      <section class="procedures-section__" id="procedures-section">
+      <section class="procedures-section" id="procedures-section">
         <div class="container">
           <h2 class="section__title">
             <span class="text__brand-dark">Наші</span> процедури
@@ -286,39 +298,41 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <div class="footer-logo">
+        <div class="footer__container">
+          <div>
             <a href="index.html"
               ><img src="./images/logo.svg" alt="логотип"
             /></a>
           </div>
           <nav>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li>
-                <a class="footer-link link" href="#reincarnation-section"
+                <a class="link link__footer" href="#reincarnation-section"
                   >Про нас
                 </a>
               </li>
               <li>
-                <a class="footer-link link" href="#advantages-section"
+                <a class="link link__footer" href="#advantages-section"
                   >Чому ми
                 </a>
               </li>
               <li>
-                <a class="footer-link link" href="#procedures-section"
+                <a class="link link__footer" href="#procedures-section"
                   >Наші процедури
                 </a>
               </li>
               <li>
-                <a class="footer-link link" href="#contact-section">Контакти</a>
+                <a class="link link__footer" href="#contact-section"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
           <address>
-            <ul class="footer-address">
+            <ul class="footer__address">
               <li>
                 <a
-                  class="footer-link link"
+                  class="link link__footer"
                   href="tel:+380960000007"
                   target="_blank"
                   >+ 38 (096) 000 00 07</a
@@ -326,7 +340,7 @@
               </li>
               <li>
                 <a
-                  class="footer-link link"
+                  class="link link__footer"
                   href="mailto:beautyzone@gmail.com"
                   target="_blank"
                   >beautyzone@gmail.com
@@ -334,31 +348,43 @@
               </li>
               <li>
                 <a
-                  class="footer-link link"
+                  class="link link__footer"
                   href="https://maps.app.goo.gl/sQAjTUkTdFyJKXKs5"
                   target="_blank"
                   >Україна, м. Київ, <br />
                   вул. Тараса Шевченка 5</a
                 >
               </li>
-              <ul class="soccontakt-blok">
+              <ul class="contakt-blok">
                 <li>
                   <a href="#" target="_blank">
-                    <svg class="footer-icon" width="32" height="32">
+                    <svg
+                      class="contakt-blok__icon contakt-blok__icon--footer"
+                      width="32"
+                      height="32"
+                    >
                       <use href="./images/icons.svg#icon-telephone"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <svg class="footer-icon" width="32" height="32">
+                    <svg
+                      class="contakt-blok__icon contakt-blok__icon--footer"
+                      width="32"
+                      height="32"
+                    >
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="#" target="_blank">
-                    <svg class="footer-icon" width="32" height="32">
+                    <svg
+                      class="contakt-blok__icon contakt-blok__icon--footer"
+                      width="32"
+                      height="32"
+                    >
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -366,11 +392,11 @@
               </ul>
             </ul>
           </address>
-          <div class="footer-documents">
-            <a class="footer-link link" href="#" target="_blank"
+          <div class="footer__documents">
+            <a class="link link__footer" href="#" target="_blank"
               >Політика конфіденційності</a
             >
-            <p class="copyright-text">&copy; 2022 Дані захищені</p>
+            <p class="footer__text">&copy; 2022 Дані захищені</p>
           </div>
         </div>
       </div>
@@ -378,65 +404,69 @@
 
     <!-- Modal -->
     <div class="backdrop is-hidden">
-      <div class="modal">
-        <button class="modal-btn-close" type="button">close</button>
-        <div class="modal-block">
-          <h2 class="modal-title">Замовити дзвінок</h2>
-          <div class="form form--modal">
-            <h3 class="form__title">
-              Запишіться <span class="text__brand-light">безкоштовно</span>
-              та отримайте подарунок
-            </h3>
-            <form name="modal-form" autocomplete="on">
-              <div class="form__field form__field--modal">
-                <label class="form__label visually-hidden" for="user-name">
-                  Ваше ім'я та прізвище
-                </label>
-                <input
-                  class="form__input"
-                  type="text"
-                  id="user-name"
-                  name="user-name"
-                  placeholder="Ваше ім'я та прізвище"
-                  required
-                />
-              </div>
-              <div class="form__field form__field--modal">
-                <label class="form__label visually-hidden" for="user-tel">
-                  Ваш номер телефону
-                </label>
-                <input
-                  class="form__input"
-                  type="tel"
-                  id="user-tel"
-                  name="user-tel"
-                  placeholder="Ваш номер телефону"
-                  pattern="^\+[0-9]{12}"
-                  required
-                />
-              </div>
-              <div class="form__field form__field--modal">
-                <label class="form__label visually-hidden" for="user-email">
-                  Ваша електронна пошта
-                </label>
-                <input
-                  class="form__input"
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Ваша електронна пошта"
-                  required
-                />
-              </div>
-              <button class="form__button button" type="submit">
-                Записатись безкоштовно
-              </button>
-            </form>
-            <p class="form__subtext">
-              Натискаючи на кнопку я погоджуюсь <br />
-              з
-              <a class="form__link" href="#">політикою конфіденційності</a>
-            </p>
+      <div class="backdrop__modal">
+        <div class="modal">
+          <button class="modal__btn-close modal-btn-close" type="button">
+            close
+          </button>
+          <div class="modal__block">
+            <h2 class="modal__title">Замовити дзвінок</h2>
+            <div class="form form--modal">
+              <h3 class="form__title">
+                Запишіться <span class="text__brand-light">безкоштовно</span>
+                та отримайте подарунок
+              </h3>
+              <form name="modal-form" autocomplete="on">
+                <div class="form__field form__field--modal">
+                  <label class="form__label visually-hidden" for="user-name">
+                    Ваше ім'я та прізвище
+                  </label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    required
+                  />
+                </div>
+                <div class="form__field form__field--modal">
+                  <label class="form__label visually-hidden" for="user-tel">
+                    Ваш номер телефону
+                  </label>
+                  <input
+                    class="form__input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Ваш номер телефону"
+                    pattern="^\+[0-9]{12}"
+                    required
+                  />
+                </div>
+                <div class="form__field form__field--modal">
+                  <label class="form__label visually-hidden" for="user-email">
+                    Ваша електронна пошта
+                  </label>
+                  <input
+                    class="form__input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="form__button button" type="submit">
+                  Записатись безкоштовно
+                </button>
+              </form>
+              <p class="form__subtext">
+                Натискаючи на кнопку я погоджуюсь <br />
+                з
+                <a class="form__link" href="#">політикою конфіденційності</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
