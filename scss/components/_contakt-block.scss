@@ -1,0 +1,14 @@
+.contakt-blok {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+  &__icon {
+    fill: var(--color-brand-dark);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+}

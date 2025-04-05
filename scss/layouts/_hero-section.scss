@@ -9,37 +9,36 @@
     url(../images/hero-section-image.jpg);
   background-repeat: no-repeat;
   background-position: right;
-}
 
-.hero-block {
-  width: 100%;
-  max-width: 530px;
-  padding: 122px 0 126px 105px;
-}
+  &__block {
+    width: 100%;
+    max-width: 530px;
+    padding: 122px 0 126px 105px;
+  }
 
-.hero-text {
-  margin-bottom: 16px;
-  color: var(--color-brand-dark);
-}
+  &__text {
+    margin-bottom: 16px;
+    color: var(--color-brand-dark);
+  }
 
-.hero-title {
-  margin-bottom: 40px;
-  font-family: "Play", sans-serif;
-  font-size: 140px;
-  line-height: 0.815;
-  font-weight: 700;
-  color: var(--color-brand-light);
-}
+  &__title {
+    margin-bottom: 40px;
+    font-family: "Play", sans-serif;
+    font-size: 140px;
+    line-height: 0.815;
+    font-weight: 700;
+    color: var(--color-brand-light);
+  }
 
-.hero-button-block {
-  width: 100%;
-  max-width: 238px;
-}
+  &__subblock {
+    width: 100%;
+    max-width: 238px;
+  }
 
-.hero-subtext {
-  text-align: center;
-  margin-top: 14px;
-  margin-bottom: 0;
-  color: var(--color-primary-dark);
-  font-size: 12px;
+  &__subtext {
+    text-align: center;
+    margin-top: 14px;
+    color: var(--color-primary-dark);
+    font-size: 12px;
+  }
 }

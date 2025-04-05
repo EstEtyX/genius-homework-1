@@ -1,11 +1,17 @@
-.brand-name {
-  text-transform: capitalize;
-}
+.text {
+  &__capitalize {
+    text-transform: capitalize;
+  }
 
-.brand-text-dark {
-  color: var(--color-brand-dark);
-}
+  &__bold {
+    font-weight: 600;
+  }
 
-.brand-text-light {
-  color: var(--color-brand-light);
+  &__brand-dark {
+    color: var(--color-brand-dark);
+  }
+
+  &__brand-light {
+    color: var(--color-brand-light);
+  }
 }

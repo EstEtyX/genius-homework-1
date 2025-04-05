@@ -1,78 +1,49 @@
 .reincarnation-section {
   margin-bottom: 88px;
-}
 
-.reincarnation-container {
-  display: flex;
-  gap: 32px;
-}
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
 
-.reincarnation-block {
-  padding-top: 40px;
-  width: 100%;
-  max-width: 710px;
-}
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    width: 100%;
+    max-width: 710px;
+  }
 
-.reincarnation-title {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.2;
-  color: var(--color-brand-light);
-  margin-bottom: 40px;
-}
+  &__title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    color: var(--color-brand-light);
+  }
 
-.reincarnation-text {
-  font-size: 22px;
-  line-height: 1.7;
-}
+  &__text {
+    font-size: 22px;
+    line-height: 1.7;
+  }
 
-.reincarnation-brand-text {
-  font-weight: 600;
-}
+  &__images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 500px;
+    border: 0;
+  }
 
-.reincarnation-images {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  width: 100%;
-  max-width: 500px;
-  border: 0;
-}
+  &__foto {
+    border-radius: 50%;
 
-.reincarnation-foto {
-  border-radius: 50%;
-}
-
-.reincarnation-foto.end {
-  align-self: flex-end;
-}
-
-.star-big {
-  position: absolute;
-  top: 346px;
-  right: 296px;
-  width: 64px;
-  height: 64px;
-  fill: var(--color-brand-dark);
-}
-
-.star-normal {
-  position: absolute;
-  top: 40px;
-  right: -18px;
-  width: 40px;
-  height: 40px;
-  fill: var(--color-brand-light);
-}
-
-.star-smoll {
-  position: absolute;
-  top: 280px;
-  right: 8px;
-  width: 16px;
-  height: 16px;
-  fill: var(--color-primary-light);
+    &--end {
+      align-self: flex-end;
+    }
+  }
 }

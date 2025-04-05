@@ -11,71 +11,71 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="index.html"
               ><img src="./images/logo.svg" alt="логотип" />
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
-                <a class="header-link link" href="#reincarnation-section"
+                <a class="link link__header" href="#reincarnation-section"
                   >Про нас</a
                 >
               </li>
               <li>
-                <a class="header-link link" href="#advantages-section"
+                <a class="link link__header" href="#advantages-section"
                   >Чому ми</a
                 >
               </li>
               <li>
-                <a class="header-link link" href="#procedures-section"
+                <a class="link link__header" href="#procedures-section"
                   >Наші процедури</a
                 >
               </li>
               <li>
-                <a class="header-link link" href="#contact-section">Контакти</a>
+                <a class="link link__header" href="#contact-section"
+                  >Контакти</a
+                >
               </li>
             </ul>
           </nav>
-          <address>
-            <ul class="soccontakt-blok">
-              <li>
-                <a href="#" target="_blank">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-telephone"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                  <svg class="header-icon" width="32" height="32">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
+          <ul class="contakt-blok">
+            <li>
+              <a href="#" target="_blank">
+                <svg class="contakt-blok__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg class="contakt-blok__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <svg class="contakt-blok__icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <div class="hero-block">
-            <p class="hero-text">Косметологічна клініка</p>
-            <h1 class="hero-title brand-name">beauty zone</h1>
-            <div class="hero-button-block">
+          <div class="hero-section__block">
+            <p class="hero-section__text">Косметологічна клініка</p>
+            <h1 class="hero-section__title text__capitalize">beauty zone</h1>
+            <div class="hero-section__subblock">
               <button class="button modal-btn-open" type="button">
                 Замовити дзвінок
               </button>
-              <p class="hero-subtext">
+              <p class="hero-section__subtext">
                 Запишись та отримай безкоштовну консультацію нашого косметолога
               </p>
             </div>
@@ -84,48 +84,46 @@
       </section>
       <section class="reincarnation-section" id="reincarnation-section">
         <div class="container">
-          <div class="reincarnation-container">
-            <div class="reincarnation-block">
-              <h2 class="reincarnation-title">
-                <span class="brand-text-dark"
+          <div class="reincarnation-section__container">
+            <div class="reincarnation-section__block">
+              <h2 class="reincarnation-section__title">
+                <span class="text__brand-dark"
                   >Перевтілюйтесь<br />
                   в
                 </span>
-                <span class="brand-name">beauty zone!</span>
+                <span class="text__capitalize">beauty zone!</span>
               </h2>
-              <p class="reincarnation-text brand-text-dark">
+              <p class="reincarnation-section__text text__brand-dark">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
-              <p class="reincarnation-text brand-text-dark">
+              <p class="reincarnation-section__text text__brand-dark">
                 B
-                <span class="reincarnation-brand-text brand-name"
-                  >beauty zone</span
-                >
+                <span class="text__bold text__capitalize">beauty zone</span>
                 ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
                 косметологічні процедури та препарати допоможуть вам
                 підтримувати свою красу та молодість.
                 <br />З нами краса назавжди!
               </p>
             </div>
-            <div class="reincarnation-images">
+            <div class="reincarnation-section__images">
               <img
-                class="reincarnation-foto"
+                class="reincarnation-section__foto"
                 src="./images/face-bad.jpg"
                 alt="обличчя з обвісшою шкірою"
               />
               <img
-                class="reincarnation-foto end"
+                class="reincarnation-section__foto reincarnation-section__foto--end"
                 src="./images/face-good.jpg"
                 alt="обличчя з підтянутою шкірою"
               />
-              <svg class="star-big">
+              <svg class="decoration decoration__star--big">
                 <use href="./images/icons.svg#icon-star-big"></use>
               </svg>
-              <svg class="star-normal">
+              <svg class="decoration decoration__star--normal">
                 <use href="./images/icons.svg#icon-star-normal"></use>
               </svg>
-              <svg class="star-smoll">
+              <svg class="decoration decoration__star--smoll">
                 <use href="./images/icons.svg#icon-star-smoll"></use>
               </svg>
             </div>
@@ -134,33 +132,33 @@
       </section>
       <section class="advantages-section" id="advantages-section">
         <div class="container">
-          <h2 class="section-title">
-            <span class="brand-text-dark">Чому люди <br /></span> обирають нас
+          <h2 class="section__title">
+            <span class="text__brand-dark">Чому люди <br /></span> обирають нас
           </h2>
-          <ul class="advantages-list">
+          <ul class="advantages-section__list">
             <li class="advantages-item">
-              <svg class="advantages-icon" width="48" height="48">
+              <svg class="advantages-item__icon" width="48" height="48">
                 <use href="./images/icons.svg#icon-materials-science"></use>
               </svg>
-              <p class="advantages-text">
+              <p class="advantages-item__text">
                 Всі наші косметологи мають вищу медичну освіту <br />
                 та стаж роботи від 5 років
               </p>
             </li>
             <li class="advantages-item">
-              <svg class="advantages-icon" width="48" height="48">
+              <svg class="advantages-item__icon" width="48" height="48">
                 <use href="./images/icons.svg#icon-equipments"></use>
               </svg>
-              <p class="advantages-text">
+              <p class="advantages-item__text">
                 Використовуємо тільки професійне обладнання та косметику,
                 перевірену часом
               </p>
             </li>
             <li class="advantages-item">
-              <svg class="advantages-icon" width="48" height="48">
+              <svg class="advantages-item__icon" width="48" height="48">
                 <use href="./images/icons.svg#icon-goal"></use>
               </svg>
-              <p class="advantages-text">
+              <p class="advantages-item__text">
                 Наша мета - підкреслити переваги та приховати недоліки, а не
                 переробити
               </p>
@@ -170,8 +168,8 @@
       </section>
       <section class="procedures-section" id="procedures-section">
         <div class="container">
-          <h2 class="section-title">
-            <span class="brand-text-dark">Наші</span> процедури
+          <h2 class="section__title">
+            <span class="text__brand-dark">Наші</span> процедури
           </h2>
           <div class="procedures-carousel">
             <button class="carousel-button" type="button">
@@ -215,8 +213,8 @@
       </section>
       <section class="contact-section" id="contact-section">
         <div class="container">
-          <h2 class="section-title">
-            <span class="brand-text-dark">Як нас</span> знайти
+          <h2 class="section__title">
+            <span class="text__brand-dark">Як нас</span> знайти
           </h2>
           <div class="contact-block">
             <iframe
@@ -228,7 +226,7 @@
             ></iframe>
             <div class="contact-form">
               <h3 class="contact-form-title">
-                Запишіться <span class="brand-text-light">безкоштовно</span>
+                Запишіться <span class="text__brand-light">безкоштовно</span>
                 та отримайте подарунок
               </h3>
               <form name="modal-form" autocomplete="on" novalidate>
@@ -382,7 +380,7 @@
           <h2 class="modal-title">Замовити дзвінок</h2>
           <div class="modal-form">
             <h3 class="form-title">
-              Запишіться <span class="brand-text-light">безкоштовно</span>
+              Запишіться <span class="text__brand-light">безкоштовно</span>
               та отримайте подарунок
             </h3>
             <form name="modal-form" autocomplete="on" novalidate>

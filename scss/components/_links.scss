@@ -1,16 +1,17 @@
 .link {
   text-decoration: none;
-}
+  transition: color 0.2s;
 
-.header-link {
-  color: var(--color-brand-dark);
-}
+  &__header {
+    color: var(--color-brand-dark);
+  }
 
-.footer-link {
-  color: var(--white);
-}
+  &__footer {
+    color: var(--white);
+  }
 
-.header-link:hover,
-.footer-link:hover {
-  color: var(--color-brand-light);
+  &__header:hover,
+  &__footer:hover {
+    color: var(--color-brand-light);
+  }
 }

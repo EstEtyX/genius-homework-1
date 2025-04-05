@@ -1,0 +1,27 @@
+.decoration {
+  position: absolute;
+
+  &__star--big {
+    top: 346px;
+    right: 296px;
+    width: 64px;
+    height: 64px;
+    fill: var(--color-brand-dark);
+  }
+
+  &__star--normal {
+    top: 40px;
+    right: -18px;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-brand-light);
+  }
+
+  &__star--smoll {
+    top: 280px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    fill: var(--color-primary-light);
+  }
+}
