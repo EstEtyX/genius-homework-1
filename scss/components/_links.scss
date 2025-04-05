@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+}
+
+.header-link {
+  color: var(--color-brand-dark);
+}
+
+.footer-link {
+  color: var(--white);
+}
+
+.header-link:hover,
+.footer-link:hover {
+  color: var(--color-brand-light);
+}

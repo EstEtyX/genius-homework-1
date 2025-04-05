@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff40;
+}
+
+.header-container {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 56px;
+}
+
+.header-icon {
+  fill: var(--color-brand-dark);
+}
+
+.header-icon:hover {
+  fill: var(--color-brand-light);
+}
