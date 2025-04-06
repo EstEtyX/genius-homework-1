@@ -17,4 +17,10 @@
     gap: 16px;
     flex-wrap: wrap;
   }
+
+  &__item {
+    display: flex;
+    flex-basis: calc((100% - 32px) / 3);
+    height: 456px;
+  }
 }
