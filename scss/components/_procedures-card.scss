@@ -25,7 +25,11 @@
     z-index: -1;
   }
 
-  &__text {
+  &__title {
     margin-bottom: 32px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--white);
   }
 }
